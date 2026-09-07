@@ -3,11 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Estilo Personalizado-->
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="stylesheet" href="css/styles.css">
+
+     <!-- Normalize -->
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+
     <title>Developer Page</title>
 </head>
 <body>
     <header>
-        <h1>Danna Albertos Developer</h1>
+        <h1 class="my-title">Danna Albertos <span>Developer</span></h1>
     </header>
 
     <nav>
@@ -50,6 +59,30 @@
     </main>
     <section>
         <h2>Contacto</h2>
+        <form>
+            <fieldset>
+                <legend>Llena tus datos de contacto</legend>
+                <div>
+                    <label>Nombre completo</label>
+                    <input type="text" placeholder="Tu nombre">
+                </div>
+                <div>
+                    <label>Teléfono</label>
+                    <input type="tel" placeholder="Tu teléfono">
+                </div>
+                <div>
+                    <label>Email</label>
+                    <input type="email" placeholder="Tu correo electrónico">
+                </div>
+                <div>
+                    <label>Mensaje</label>
+                    <textarea></textarea>
+                </div>
+                <div>
+                    <input type="submit" value="Enviar">
+                </div>
+            </fieldset>
+        </form>
     </section>
     <footer>
         <p>Todos los derechos reservados ©. Danna Albertos Developer 2026</p>
